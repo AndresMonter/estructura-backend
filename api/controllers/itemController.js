@@ -60,7 +60,7 @@ const readById = async (req,res)=> {
 const update = async (req,res) => {
     const {id} = req.params
     try {
-   const item = await Item.findByIdAndUpdate(id, req.body, {
+     const item = await Item.findByIdAndUpdate(id, req.body, {
         new : true,
    });
         return res.json({
